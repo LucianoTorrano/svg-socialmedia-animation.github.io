@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #c5c5c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .title {
+  font-size: 40px;
+  margin: 0 10% 20px 10%;
+  color: #b82727;
+  pointer-events: none;
+}
+
+.container .subtitle {
+  font-size: 25px;
+  margin: 0 10% 20px 10%;
+  color: #2c46bb;
+  pointer-events: none;
+}
+
+.container svg {
+  height: 50%;
+  width: 50%;
+  position: relative;
+}
+
+.container svg #instagram, .container svg #facebook, .container svg #socialmedia-top {
+  position: absolute;
+  -webkit-animation: social-media-movement 3s linear infinite;
+          animation: social-media-movement 3s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.container svg #pinterest, .container svg #twitter {
+  position: absolute;
+  -webkit-animation: social-media-movement 3s linear infinite;
+          animation: social-media-movement 3s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.container svg #phone {
+  cursor: pointer;
+}
+
+.container svg .hidden-element {
+  display: none;
+}
+
+.container svg #background {
+  overflow: hidden;
+}
+
+/* SOCIAL MEDIA MOVEMENT ANIMATION */
+@-webkit-keyframes social-media-movement {
+  0% {
+    -webkit-transform: translateY(0px) rotateZ(0deg);
+            transform: translateY(0px) rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: translateY(-10px) rotateZ(10deg);
+            transform: translateY(-10px) rotateZ(10deg);
+  }
+  50% {
+    -webkit-transform: translateY(-25px) rotateZ(20deg);
+            transform: translateY(-25px) rotateZ(20deg);
+  }
+  75% {
+    -webkit-transform: translateY(-10px) rotateZ(10deg);
+            transform: translateY(-10px) rotateZ(10deg);
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotateZ(0deg);
+            transform: translateY(0px) rotateZ(0deg);
+  }
+}
+@keyframes social-media-movement {
+  0% {
+    -webkit-transform: translateY(0px) rotateZ(0deg);
+            transform: translateY(0px) rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: translateY(-10px) rotateZ(10deg);
+            transform: translateY(-10px) rotateZ(10deg);
+  }
+  50% {
+    -webkit-transform: translateY(-25px) rotateZ(20deg);
+            transform: translateY(-25px) rotateZ(20deg);
+  }
+  75% {
+    -webkit-transform: translateY(-10px) rotateZ(10deg);
+            transform: translateY(-10px) rotateZ(10deg);
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotateZ(0deg);
+            transform: translateY(0px) rotateZ(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
